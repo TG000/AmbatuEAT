@@ -1,0 +1,9 @@
+:root {
+    /* --black: black; 1 trong những tông màu chính (cơ mà dùng color: black cho nhanh) */
+    /* --white: white 1 trong những tông màu chính (cơ mà dùng color: white cho nhanh) */
+    --dark-orange: #e47b1f;
+    --white-gray: #b5b3b3;
+    --gray-white: #f7f7f7;
+    --dark-gray: #424242;
+    --less-black: #101010;
+}

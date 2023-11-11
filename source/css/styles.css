@@ -1,0 +1,332 @@
+@import url(./reuse.css);
+@import url(./animation.css);
+
+/* ============== Responsive ============== */
+
+@media (min-width: 992px) {
+    .navbar-icon-collapse {
+        display: none;
+    }
+
+    .multi-carousel-inner {
+        display: flex;
+    }
+    
+    .multi-carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100% / 3);
+    }
+}
+
+/* ============== Rewrite / Change some properties to fit our project ============== */
+
+.dropdown-menu {
+    transition: all .3s;
+    display: block;
+    opacity: 0;
+    transform-origin: top;
+    -webkit-transform: scale(1, 0) !important;
+    transform: scale(1, 0) !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    margin-top: 0; /* remove the gap so it doesn't close */
+    -webkit-transform: scale(1) !important;
+    transform: scale(1) !important;
+}
+
+.dropdown-btn:focus .dropdown-menu {
+    opacity: 1;
+    margin-top: 0; /* remove the gap so it doesn't close */
+    -webkit-transform: scale(1) !important;
+    transform: scale(1) !important;
+}
+
+.dropdown-item:hover {
+    color: var(--dark-orange);
+}
+
+.dropdown-item:active {
+    background-color: transparent;
+}
+
+.active {
+    color: var(--dark-orange) !important;
+}
+
+.nav-link:hover {
+    color: var(--dark-orange) !important;
+}
+
+.input-group input:focus{
+    outline:0px !important; 
+    box-shadow: none !important;
+}
+
+.navbar {
+    transition:500ms ease;
+    background:transparent;
+}
+
+.navbar.scrolled{
+    background:#000;
+}
+
+.carousel-indicators button {
+    height: 20px !important;
+    width: 7px !important;
+    transition: all .5s !important;
+}
+
+.carousel-indicators button.active {
+    height: 40px !important;
+}
+
+.carousel-control-prev {
+    left: -5%;
+}
+
+.carousel-control-next {
+    right: -5%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 0% !important;
+}
+
+/* ============== New ============== */
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo-title {
+    color: var(--dark-orange);
+}
+
+.nav-btn {
+    width: 42px;
+    height: 42px;
+}
+
+.nav-btn:hover i {
+    color: var(--dark-orange) !important;
+    transition: all .15s;
+}
+
+.stats {
+    background-image: url(../../other/img/stats.jpg);
+}
+
+.menus {
+    background-image: url(../../other/img/menus.jpg);
+}
+
+.news {
+    background-image: url(../../other/img/news.jpg);
+}
+
+.focus-orange {
+    background-color: var(--dark-orange) !important;
+}
+
+.bg-orange {
+    background-color: var(--dark-orange);
+    border: 2px solid var(--dark-orange) !important;
+}
+
+.bg-orange:hover {
+    color: var(--dark-orange) !important;
+}
+
+.bg-orange:active {
+    border: 2px solid white !important;
+    color: white !important;
+}
+
+.text-orange {
+    color: var(--dark-orange);
+}
+
+.underline-orange {
+    -webkit-text-decoration-color: var(--dark-orange) !important;
+    text-decoration-color: var(--dark-orange) !important;
+}
+
+.font-fancy {
+    font-family: 'Dancing Script', cursive;
+}
+
+.line-height-sep {
+    line-height: 1.75;
+}
+
+.details-title, .chefs-title {
+    left: 0;
+    right: 0;
+}
+
+.details-img {
+    height: 450px;
+}
+
+.chefs-img {
+    height: 370px;
+}
+
+.details-title {
+    transition: all .3s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)) !important;
+}
+
+.focus-display {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
+}
+
+.h-60px {
+    height: 60px !important;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: 50% 80%;
+}
+
+.bg-black-overlay {
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+}
+
+.section-extra-small {
+    height: 10vh;
+}
+
+.section-small {
+    height: 30vh;
+}
+
+.section-medium {
+    height: 45vh;
+}
+
+.section-big {
+    height: 70vh;
+}
+
+.section-extra-big {
+    height: 90vh;
+}
+
+.card-chefs {
+    background-color: var(--gray-white);
+    height: 550px;
+}
+
+.hover-orange {
+    transition: all .3s;
+}
+
+.hover-orange:hover {
+    color: var(--dark-orange) !important;
+}
+
+.hover-with-icon span i {
+    transition: transform 0.3s;
+    transform-origin: left;
+}
+
+.hover-with-icon:hover span i {
+    transform: scaleX(1.5);
+}
+
+.bg-less-black {
+    background-color: var(--less-black) !important;
+}
+
+.text-white-gray {
+    color: var(--white-gray) !important;
+}
+
+.subscribe-form input, .subscribe-form button {
+    height: 45px !important;
+}
+
+.subscribe-form input::placeholder {
+    color: var(--dark-gray);
+}
+
+.social-icons {
+    width: 35px;
+    height: 35px;
+}
+
+#btn-back-to-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: all .3s;
+    opacity: 0;
+}
+
+.details-popup {
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(10%);
+}
+
+.card:hover .details-popup {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover .details-title {
+    opacity: 0;
+}
+
+.bg-black-opa-8 {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+.intro-first {  
+    animation: 1s ease-out 0s 1 slideInFromTop, 1s ease-out 0s 1 fadeIn;
+    animation-play-state: paused;
+}
+
+.intro-second {
+    animation: 1s ease-out 0s 1 slideInFromLeft, 1s ease-out 0s 1 fadeIn;
+    animation-play-state: paused;
+}
+
+.intro-third {
+    animation: 2s ease-out 0s 1 fadeIn;
+    animation-play-state: paused;
+}
+
+.intro-final {
+    animation: 2s ease-out 0s 1 fadeIn;
+    animation-play-state: paused;
+}
+
+.animation-play {
+    animation-play-state: running !important;
+}
+
+.carousel-draggable:active:hover {
+    cursor: grab;
+}
+
+.img-zoom-in {
+    transition: all .3s ease-in-out;
+}
+
+.img-zoom-in:hover {
+    transform: scale(1.1);
+}

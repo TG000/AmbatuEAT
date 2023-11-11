@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Ambatukam Project</title>
+</head>
+<body>
+    <!-- Back To Top Button -->
+    <button type="button" class="btn bg-orange btn-floating btn-lg rounded-circle text-light z-3" id="btn-back-to-top">
+        <i class="bi bi-arrow-up d-flex justify-content-center align-items-center"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container">
+            <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+                <i class="bi bi-list text-light"></i>
+            </button>
+
+            <a class="navbar-brand fw-semibold py-0 d-flex align-items-center" href="#">
+                <img class="px-2 user-select-none" src="../../other/img/logo.png" alt="Logo" height="50">
+                <h3 class="h4 my-0 text-light user-select-none">AMBATU<span class="logo-title">EAT</span></h3>
+            </a>
+
+            <button class="btn rounded-circle h4 navbar-icon-collapse" type="button">
+                <i class="bi bi-telephone-fill text-light"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbar-menu">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item py-3">
+                        <a class="nav-link text-light active fw-semibold user-select-none" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item py-3">
+                        <a class="nav-link text-light fw-semibold user-select-none" href="#">ABOUT</a>
+                    </li>
+                    <li class="dropdown position-static">
+                        <a class="nav-link py-4 text-light dropdown-toggle fw-semibold user-select-none" data-toggle="dropdown" href="#">
+                            SHOP
+                        </a>
+                        <ul class="container w-100 d-flex justify-content-between position-absolute" style="left: 0; right: 0;">
+                            <li class="dropdown-menu rounded-top-0 d-flex justify-content-evenly align-items-center rounded-bottom-3 mt-0 w-100" style="left: 0; right: 0;">
+                                <ul class="col-3 mb-2 px-0">
+                                    <li class="list-unstyled"><a class="dropdown-item fw-bold h5 my-2 user-select-none" href="#">Menu One</a></li>
+                                    <li class="list-unstyled"><a class="dropdown-item user-select-none" href="#">Item One</a></li>
+                                    <li class="list-unstyled"><a class="dropdown-item user-select-none" href="#">Item Two</a></li>
+                                    <li class="list-unstyled"><a class="dropdown-item user-select-none" href="#">Item Three</a></li>
+                                </ul>
+                                <div class="vr d-flex align-self-center" style="height: 100px;"></div>
+                                <ul class="col-3 mb-2 px-0">
+                                    <li class="list-unstyled"><a class="dropdown-item fw-bold h5 my-2 user-select-none" href="#">Menu Two</a></li>
+                                    <li class="list-unstyled"><a class="dropdown-item user-select-none" href="#">Item One</a></li>
+                                    <li class="list-unstyled"><a class="dropdown-item user-select-none" href="#">Item Two</a></li>
+                                    <li class="list-unstyled"><a class="dropdown-item user-select-none" href="#">Item Three</a></li>
+                                </ul>
+                                <div class="vr d-flex align-self-center" style="height: 100px;"></div>
+                                <ul class="col-3 mb-2 px-0">
+                                    <li class="list-unstyled"><a class="dropdown-item fw-bold h5 my-2 user-select-none" href="#">Menu Three</a></li>
+                                    <li class="list-unstyled"><a class="dropdown-item user-select-none" href="#">Item One</a></li>
+                                    <li class="list-unstyled"><a class="dropdown-item user-select-none" href="#">Item Two</a></li>
+                                    <li class="list-unstyled"><a class="dropdown-item user-select-none" href="#">Item Three</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <div class="dropdown">
+                        <a class="nav-link py-4 text-light dropdown-toggle fw-semibold user-select-none" data-toggle="dropdown" href="#">
+                            PAGE
+                        </a>
+                        <ul class="dropdown-menu rounded-top-0 rounded-bottom-3">
+                            <li><a class="dropdown-item user-select-none" href="#">Blog</a></li>
+                            <li><a class="dropdown-item user-select-none" href="#">Faq</a></li>
+                            <li><a class="dropdown-item user-select-none" href="#">Our Teams</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item py-3">
+                        <a class="nav-link text-light fw-semibold user-select-none" href="#">CONTACT</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item py-3 px-2">
+                        <button type="button" class="btn rounded-5 border-opacity-25 border-light nav-btn">
+                            <i class="bi bi-search text-light"></i>
+                        </button>
+                    </li>
+
+                    <li class="nav-item py-3 px-2">
+                        <button type="button" class="btn rounded-5 border-opacity-25 border-light nav-btn">
+                            <i class="bi bi-person-fill text-light"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introduction -->
+    <section class="intro d-flex flex-column justify-content-center vh-100">
+        <div class="carousel slide carousel-fade z-0 position-absolute w-100 vh-100 overflow-hidden" data-bs-ride="carousel">
+            <div class="carousel-inner vh-100">
+                <div class="carousel-item active vh-100">
+                    <img class="d-block h-100 w-100 object-fit-cover" src="../../other/img/intro.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item vh-100">
+                    <img class="d-block h-100 w-100 object-fit-cover" src="../../other/img/intro_2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item vh-100">
+                    <img class="d-block h-100 w-100 object-fit-cover" src="../../other/img/intro_3.jpg" alt="Third slide">
+                </div>
+            </div>
+        </div>
+
+        <div class="z-1 w-100 h-100 d-flex flex-column justify-content-center focus-display m-0">
+            <h3 class="text-center text-orange display-4 font-fancy mb-4 intro-first">Spicy & Delicious</h3>
+            <h1 class="text-center display-1 fw-bolder py-1 text-light intro-second">VIETNAMESE FASTFOOD</h1>
+            <h3 class="text-center h3 text-light mb-5 intro-third">Ultimate Flavory Experience In Your City</h2>
+            <div class="text-center">
+                <button class="btn text-light rounded-5 bg-orange px-5 py-3 fw-semibold d-inline-block intro-final">
+                    ORDER NOW
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story -->
+    <section class="story bg-light my-4 section-big">
+        <div class="container d-flex align-items-center h-100 py-5">
+            <div class="w-50">
+                <h2 class=" text-orange display-6 font-fancy">Welcome to Ambatueat</h2>
+                <h2 class="display-6 fw-bolder">
+                    <span class="text-decoration-underline underline-orange">DISCOVER</span> OUR STORY
+                </h2>
+                <p class=" py-4 text-muted line-height-sep">
+                    Ambatueat is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersec. <br> <br>
+        
+                    Ambatueat is the place for a fine dining experience where the tradition is blended with an imaginative and modern twist.
+                </p>
+                <button class="btn text-light rounded-5 bg-orange px-5 py-3 fw-semibold d-inline-block">
+                    READ MORE
+                </button>
+            </div>
+
+            <div class="w-50 d-flex justify-content-end">
+                <img class="w-75" src="../../other/img/story.jpg" alt="Story Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats bg-image bg-black-overlay section-small">
+        <div class="container d-flex align-items-center justify-content-evenly h-100">
+            <div class="d-flex flex-column align-items-center justify-content-evenly col-3">
+                <i class="bi bi-egg-fill display-6 text-orange"></i>
+                <h2 class="display-6 p-0 m-0 text-light fw-bold py-2 stats-menu">
+                    10222
+                </h2>
+                <h4 class="h5 m-0 text-light">MENUS</h4>
+            </div>
+    
+            <div class="d-flex flex-column align-items-center justify-content-evenly col-3">
+                <i class="bi bi-heart-fill display-6 text-orange"></i>
+                <h2 class="display-6 p-0 m-0 text-light fw-bold py-2 stats-rate">
+                    65200
+                </h2>
+                <h4 class="h5 m-0 text-light">TOP RATED</h4>
+            </div>
+    
+            <div class="d-flex flex-column align-items-center justify-content-evenly col-3">
+                <i class="bi bi-people-fill display-6 text-orange"></i>
+                <h2 class="display-6 p-0 m-0 text-light fw-bold py-2 stats-customer">
+                    15642
+                </h2>
+                <h4 class="h5 m-0 text-light">HAPPY CUSTOMERS</h4>
+            </div>
+    
+            <div class="d-flex flex-column align-items-center justify-content-evenly col-3">
+                <i class="bi bi-house-fill display-6 text-orange"></i>
+                <h2 class="display-6 m-0 m-0 text-light fw-bold py-2 stats-branches">
+                    30
+                </h2>
+                <h4 class="h5 m-0 text-light">BRANCHES</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details -->
+    <section class="details my-5 py-5 pb-4">
+        <div class="container">
+            <div id="carouselDetails" class="carousel slide">
+                <div class="carousel-inner carousel-draggable carousel-inner-details multi-carousel-inner">
+                    <div class="carousel-item multi-carousel-item active">
+                        <div class="card position-relative mx-3">
+                            <img src="../../other/img/details_1.png" class="details-img w-100 object-fit-cover" alt="Restaurant">
+                            <h4 class="h5 w-100 h-100 pb-4 d-flex justify-content-center align-items-end bg-opacity-50 bottom-0 m-0 text-light position-absolute z-1 details-title text-center user-select-none">RESTAURANT</h4>
+
+                            <div class="card-details position-absolute z-2 details-popup m-5 d-flex flex-column justify-content-center align-items-center bg-black-opa-8">
+                                <span class="text-light h5 user-select-none">RESTAURANT</span>
+                                <hr class="hr-blurry bg-orange w-25">
+                                <span class="text-light text-center mx-4 line-height-sep mt-2 user-select-none">Ambatueat is a restaurant, food ordering web app, and coffee roastery located on a busy corner site in Ho Chi Minh city with glazed frontage.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item multi-carousel-item">
+                        <div class="card position-relative mx-3">
+                            <img src="../../other/img/details_2.jpg" class="details-img w-100 object-fit-cover" alt="Food Ordering">
+                            <h4 class="h5 w-100 h-100 pb-4 d-flex justify-content-center align-items-end bg-opacity-50 bottom-0 m-0 text-light position-absolute z-1 details-title text-center user-select-none">FOOD ORDERING</h4>
+
+                            <div class="card-details position-absolute z-2 details-popup m-5 d-flex flex-column justify-content-center align-items-center bg-black-opa-8">
+                                <span class="text-light h5 user-select-none">FOOD ORDERING</span>
+                                <hr class="hr-blurry bg-orange w-25">
+                                <span class="text-light text-center mx-4 line-height-sep mt-2 user-select-none">Ambatueat is a restaurant, food ordering web app, and coffee roastery located on a busy corner site in Ho Chi Minh city with glazed frontage.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item multi-carousel-item">
+                        <div class="card position-relative mx-3">
+                            <img src="../../other/img/details_3.jpg" class="details-img w-100 object-fit-cover" alt="Wine & Cocktails">
+                            <h4 class="h5 w-100 h-100 pb-4 d-flex justify-content-center align-items-end bg-opacity-50 bottom-0 m-0 text-light position-absolute z-1 details-title text-center user-select-none">WINE & COCKTAILS</h4>
+
+                            <div class="card-details position-absolute z-2 details-popup m-5 d-flex flex-column justify-content-center align-items-center bg-black-opa-8">
+                                <span class="text-light h5 user-select-none">WINE & COCKTAILS</span>
+                                <hr class="hr-blurry bg-orange w-25">
+                                <span class="text-light text-center mx-4 line-height-sep mt-2 user-select-none">Ambatueat is a restaurant, food ordering web app, and coffee roastery located on a busy corner site in Ho Chi Minh city with glazed frontage.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item multi-carousel-item">
+                        <div class="card position-relative mx-3">
+                            <img src="../../other/img/details_4.jpg" class="details-img w-100 object-fit-cover" alt="Vietnamese Cuisine">
+                            <h4 class="h5 w-100 h-100 pb-4 d-flex justify-content-center align-items-end bg-opacity-50 bottom-0 m-0 text-light position-absolute z-1 details-title text-center user-select-none">VIETNAMESE CUISINE</h4>
+
+                            <div class="card-details position-absolute z-2 details-popup m-5 d-flex flex-column justify-content-center align-items-center bg-black-opa-8">
+                                <span class="text-light h5 user-select-none">VIETNAMESE CUISINE</span>
+                                <hr class="hr-blurry bg-orange w-25">
+                                <span class="text-light text-center mx-4 line-height-sep mt-2 user-select-none">Ambatueat is a restaurant, food ordering web app, and coffee roastery located on a busy corner site in Ho Chi Minh city with glazed frontage.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-indicators carousel-indicators-details position-static mb-0 my-4 h-60px" style="transform:  scale(1, -1);">
+                    <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="0" class="active bg-dark carousel-back-details focus-orange" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="1" class="bg-dark carousel-next-details focus-orange" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="2" class="bg-dark d-lg-none focus-orange" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="3" class="bg-dark d-lg-none focus-orange" aria-label="Slide 4"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menus -->
+    <section class="menus bg-image bg-black-overlay section-small">
+        <div class="container h-100 d-flex justify-content-between">
+            <div class="d-flex flex-column justify-content-center">
+                <h2 class=" text-orange display-6 font-fancy">Our Menus</h2>
+                <h2 class="h2 fw-bolder text-light">
+                    <span class="text-decoration-underline underline-orange">MENU OF</span> THE DAY
+                </h2>
+            </div>
+            <div class="d-flex align-items-center">
+                <button class="btn text-light rounded-5 bg-orange px-5 py-3 fw-semibold d-inline-block">
+                    DOWNLOAD PDF
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs -->
+    <section class="chefs section-extra-big">
+        <div class="container mb-5 p-5">
+            <div class="p-5">
+                <h2 class=" text-orange display-6 font-fancy py-2 m-0 text-center">Meet</h2>
+                <h2 class="h2 fw-bolder text-dark py-1 m-0 text-center">
+                    <span class="text-decoration-underline underline-orange">OUR CHEFS</span>
+                </h2>
+            </div>
+
+            <div id="carouselChefs" class="carousel slide">
+                <div id="carouselChefs-inner" class="carousel-inner carousel-inner-chefs multi-carousel-inner">
+                    <div class="carousel-item carousel-chefs-item multi-carousel-item active">
+                        <div class="card-chefs d-flex flex-column mx-3 px-lg-4 px-5">
+                            <img src="../../other/img/chef.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-5" alt="Restaurant">
+                            <h4 class="user-select-none h4 bg-white h-25 d-flex flex-column align-content-around justify-content-center align-items-center text-dark fw-semibold text-center w-100 mb-lg-4 mb-5 py-3 py-lg-0">Tuân Tuấn Võ Mẹ<span class="h6 text-orange mt-2">Pastry Chef</span></h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-chefs-item multi-carousel-item">
+                        <div class="card-chefs d-flex flex-column mx-3 px-lg-4 px-5">
+                            <img src="../../other/img/chef_2.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-5" alt="Restaurant">
+                            <h4 class="user-select-none h4 bg-white h-25 d-flex flex-column align-content-around justify-content-center align-items-center text-dark fw-semibold text-center w-100 mb-lg-4 mb-5 py-3 py-lg-0">Tuân Tuấn Võ Con<span class="h6 text-orange mt-2">Roast Chef</span></h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-chefs-item multi-carousel-item">
+                        <div class="card-chefs d-flex flex-column mx-3 px-lg-4 px-5">
+                            <img src="../../other/img/chef_3.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-5" alt="Restaurant">
+                            <h4 class="user-select-none h4 bg-white h-25 d-flex flex-column align-content-around justify-content-center align-items-center text-dark fw-semibold text-center w-100 mb-lg-4 mb-5 py-3 py-lg-0">Tuân Tuấn Võ Cha<span class="h6 text-orange mt-2">Sauce Chef</span></h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-chefs-item multi-carousel-item">
+                        <div class="card-chefs d-flex flex-column mx-3 px-lg-4 px-5">
+                            <img src="../../other/img/chef_4.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-5" alt="Restaurant">
+                            <h4 class="user-select-none h4 bg-white h-25 d-flex flex-column align-content-around justify-content-center align-items-center text-dark fw-semibold text-center w-100 mb-lg-4 mb-5 py-3 py-lg-0">Johnny Black<span class="h6 text-orange mt-2">Sous Chef</span></h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item multi-carousel-item">
+                        <div class="card-chefs d-flex flex-column mx-3 px-lg-4 px-5">
+                            <img src="../../other/img/chef_5.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-5" alt="Restaurant">
+                            <h4 class="user-select-none h4 bg-white h-25 d-flex flex-column align-content-around justify-content-center align-items-center text-dark fw-semibold text-center w-100 mb-lg-4 mb-5 py-3 py-lg-0">Ambatunat<span class="h6 text-orange mt-2">Head Chef</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselChefs" data-bs-slide="prev" onclick="this.blur()">
+                    <span>
+                        <i class="bi bi-arrow-left h3 text-black d-flex align-items-center justify-content-center m-0"></i>
+                    </span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselChefs" data-bs-slide="next" onclick="this.blur()">
+                    <span>
+                        <i class="bi bi-arrow-right h3 text-black d-flex align-items-center justify-content-center m-0"></i>
+                    </span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section class="news section-small bg-image bg-black-overlay">
+        <div class="container h-100 d-flex justify-content-between">
+            <div class="d-flex flex-column justify-content-center">
+                <h2 class=" text-orange display-6 font-fancy">Blog Post</h2>
+                <h2 class="h2 fw-bolder text-light">
+                    <span class="text-decoration-underline underline-orange">SEE OUR</span> LATEST NEWS
+                </h2>
+            </div>
+            <div class="d-flex align-items-center">
+                <button class="btn text-light rounded-5 bg-orange px-5 py-3 fw-semibold d-inline-block">
+                    VIEW ALL NEWS
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post -->
+    <section class="post my-5 py-5 pb-4">
+        <div class="container">
+            <div id="carouselPost" class="carousel slide">
+                <div class="carousel-inner carousel-inner-post multi-carousel-inner">
+                    <div class="carousel-item multi-carousel-item active">
+                        <div class="card position-relative mx-3">
+                            <a href="#" class="overflow-hidden">
+                                <img src="../../other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            </a>
+                            <div class="d-flex flex-column justify-content-evenly m-5">
+                                <span class="h6 text-secondary">February 25, 2019</span>
+                                <a class="h5 text-dark fw-semibold my-2 text-decoration-none hover-orange" href="#">Rich flavor of grill nun & hot cereals</a>
+                                <span class="h6 text-secondary my-2 line-height-sep">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa odio eaque veniam, repellat, delectus voluptates..</span>
+                                <a class="text-decoration-none text-dark fw-semibold d-flex justify-content-start mt-3 hover-orange hover-with-icon" href="#">Read More <span><i class="bi bi-arrow-right h5 d-flex justify-content-center align-items-center mx-2 my-0 h-100"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item multi-carousel-item active">
+                        <div class="card position-relative mx-3">
+                            <a href="#" class="overflow-hidden">
+                                <img src="../../other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            </a>
+                            <div class="d-flex flex-column justify-content-evenly m-5">
+                                <span class="h6 text-secondary">February 25, 2019</span>
+                                <a class="h5 text-dark fw-semibold my-2 text-decoration-none hover-orange" href="#">Rich flavor of grill nun & hot cereals</a>
+                                <span class="h6 text-secondary my-2 line-height-sep">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa odio eaque veniam, repellat, delectus voluptates..</span>
+                                <a class="text-decoration-none text-dark fw-semibold d-flex justify-content-start mt-3 hover-orange hover-with-icon" href="#">Read More <span><i class="bi bi-arrow-right h5 d-flex justify-content-center align-items-center mx-2 my-0 h-100"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item multi-carousel-item active">
+                        <div class="card position-relative mx-3">
+                            <a href="#" class="overflow-hidden">
+                                <img src="../../other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            </a>
+                            <div class="d-flex flex-column justify-content-evenly m-5">
+                                <span class="h6 text-secondary">February 25, 2019</span>
+                                <a class="h5 text-dark fw-semibold my-2 text-decoration-none hover-orange" href="#">Rich flavor of grill nun & hot cereals</a>
+                                <span class="h6 text-secondary my-2 line-height-sep">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa odio eaque veniam, repellat, delectus voluptates..</span>
+                                <a class="text-decoration-none text-dark fw-semibold d-flex justify-content-start mt-3 hover-orange hover-with-icon" href="#">Read More <span><i class="bi bi-arrow-right h5 d-flex justify-content-center align-items-center mx-2 my-0 h-100"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item multi-carousel-item active">
+                        <div class="card position-relative mx-3">
+                            <a href="#" class="overflow-hidden">
+                                <img src="../../other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            </a>
+                            <div class="d-flex flex-column justify-content-evenly m-5">
+                                <span class="h6 text-secondary">February 25, 2019</span>
+                                <a class="h5 text-dark fw-semibold my-2 text-decoration-none hover-orange" href="#">Rich flavor of grill nun & hot cereals</a>
+                                <span class="h6 text-secondary my-2 line-height-sep">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa odio eaque veniam, repellat, delectus voluptates..</span>
+                                <a class="text-decoration-none text-dark fw-semibold d-flex justify-content-start mt-3 hover-orange hover-with-icon" href="#">Read More <span><i class="bi bi-arrow-right h5 d-flex justify-content-center align-items-center mx-2 my-0 h-100"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item multi-carousel-item active">
+                        <div class="card position-relative mx-3">
+                            <a href="#" class="overflow-hidden">
+                                <img src="../../other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            </a>
+                            <div class="d-flex flex-column justify-content-evenly m-5">
+                                <span class="h6 text-secondary">February 25, 2019</span>
+                                <a class="h5 text-dark fw-semibold my-2 text-decoration-none hover-orange" href="#">Rich flavor of grill nun & hot cereals</a>
+                                <span class="h6 text-secondary my-2 line-height-sep">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa odio eaque veniam, repellat, delectus voluptates..</span>
+                                <a class="text-decoration-none text-dark fw-semibold d-flex justify-content-start mt-3 hover-orange hover-with-icon" href="#">Read More <span><i class="bi bi-arrow-right h5 d-flex justify-content-center align-items-center mx-2 my-0 h-100"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item multi-carousel-item active">
+                        <div class="card position-relative mx-3">
+                            <a href="#" class="overflow-hidden">
+                                <img src="../../other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            </a>
+                            <div class="d-flex flex-column justify-content-evenly m-5">
+                                <span class="h6 text-secondary">February 25, 2019</span>
+                                <a class="h5 text-dark fw-semibold my-2 text-decoration-none hover-orange" href="#">Rich flavor of grill nun & hot cereals</a>
+                                <span class="h6 text-secondary my-2 line-height-sep">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa odio eaque veniam, repellat, delectus voluptates..</span>
+                                <a class="text-decoration-none text-dark fw-semibold d-flex justify-content-start mt-3 hover-orange hover-with-icon" href="#">Read More <span><i class="bi bi-arrow-right h5 d-flex justify-content-center align-items-center mx-2 my-0 h-100"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-indicators carousel-indicators-post position-static mb-0 my-4 h-60px" style="transform:  scale(1, -1);">
+                    <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="0" class="active bg-dark carousel-back-post focus-orange" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="1" class="bg-dark carousel-next-post focus-orange" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="2" class="bg-dark d-lg-none focus-orange" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="3" class="bg-dark d-lg-none focus-orange" aria-label="Slide 4"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="section-medium bg-less-black">
+            <div class="container h-100 d-flex justify-content-between align-items-start py-5">
+                <div class="d-flex flex-column justify-content-center py-3 my-5 col-3">
+                    <span class="h4 text-light fw-semibold m-0"><span class="text-decoration-underline underline-orange">ADDRE</span>SS</span>
+                    <span class="d-flex justify-content-start align-items-center text-white-gray my-2 mt-4">
+                        <i class="bi bi-geo-alt-fill d-flex justify-content-center align-items-center me-3"></i>
+                        Ristora Restaurant, 103, NY 254
+                    </span>
+                    <span class="d-flex justify-content-start align-items-center text-white-gray my-2">
+                        <i class="bi bi-telephone-fill d-flex justify-content-center align-items-center me-3"></i>
+                        <a href="tel:+84-913-123-445" class="text-decoration-none text-white-gray hover-orange">+84-913-123-445</a>
+                    </span>
+                    <span class="d-flex justify-content-start align-items-center text-white-gray my-2">
+                        <i class="bi bi-envelope-open d-flex justify-content-center align-items-center me-3"></i>
+                        <a href="mailto:tranlangiac@gmail.com" class="text-decoration-none text-white-gray hover-orange">tranlangiac@gmail.com</a>
+                    </span>
+                </div>
+
+                <div class="d-flex flex-column justify-content-center py-3 my-5 col-3">
+                    <a class="h2 text-light fw-semibold m-0 text-decoration-underline underline-orange text-center" href="#">AMBATUEAT</a>
+                    <span class="d-flex justify-content-center align-items-center text-white-gray my-2 mt-4">
+                        <span class="fw-semibold me-1">Monday - Thursday:</span> 08AM - 10PM
+                    </span>
+                    <span class="d-flex justify-content-center align-items-center text-white-gray my-2">
+                        <span class="fw-semibold me-1">Friday - Saturday:</span> 10AM - 11:30PM
+                    </span>
+                    <span class="d-flex justify-content-center align-items-center text-white-gray my-2">
+                        <span class="fw-semibold me-1">Sunday:</span> 1PM - 10PM
+                    </span>
+                    <span class="d-flex justify-content-center align-items-center text-white-gray my-2">
+                        <span class="fw-semibold me-1 my-3">Food Ordering Time:</span> 24/7 Hours
+                    </span>
+                </div>
+
+                <div class="d-flex flex-column justify-content-center py-3 my-5 col-3">
+                    <span class="h4 text-light fw-semibold m-0"><span class="text-decoration-underline underline-orange">SUBSCR</span>IBE NOW</span>
+                    <span class="text-white-gray my-2 mt-4">
+                        Sign up to our newsletter to get latest food item news and our new events. This theme will help you organizing your site without any technical skills.
+                    </span>
+                    <div class="input-group mt-4 d-flex align-items-center subscribe-form">
+                        <input type="text" class="user-select-none form-control bg-less-black text-white-gray rounded-start-5 border-end-0 h-auto px-3" placeholder="Email address" style="border: 1px solid gray">
+                        <button class="btn text-light h6 bg-orange m-0 rounded-end-5" type="button">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-extra-small bg-black">
+            <div class="container h-100 d-flex align-items-center justify-content-between">
+                <div class="text-white-gray">
+                    © 2023 All Rights Reserved
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-decoration-none d-flex justify-content-center align-items-center social-icons bg-orange rounded-circle mx-1">
+                        <i class="bi bi-facebook d-flex justify-content-center align-items-center text-light fw"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none d-flex justify-content-center align-items-center social-icons bg-orange rounded-circle mx-1">
+                        <i class="bi bi-twitter-x d-flex justify-content-center align-items-center text-light fw"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none d-flex justify-content-center align-items-center social-icons bg-orange rounded-circle mx-1">
+                        <i class="bi bi-instagram d-flex justify-content-center align-items-center text-light fw"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/jquery.touchSwipe.min.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/animated.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
