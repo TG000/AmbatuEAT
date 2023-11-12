@@ -186,4 +186,8 @@
     .carousel-control-next {
         right: 6% !important;
     }
+
+    .phone-vh-100 {
+        height: 100vh !important;
+    }
 }
