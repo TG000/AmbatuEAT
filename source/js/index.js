@@ -31,6 +31,10 @@ $(window).scroll(() => {
     scrollFunction();
 });
 
+
+
+// ====================== Back To Top Button ========================== //
+
 let backtopBtn = document.getElementById("btn-back-to-top");
 
 function scrollFunction() {
@@ -49,4 +53,37 @@ backtopBtn.addEventListener("click", backToTop);
 function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+
+
+// ====================== Navbar Close Button ========================== //
+
+const navbarCloseBtn = document.querySelector('#navbar-close');
+
+navbarCloseBtn.addEventListener('click', () => {
+    navbarCloseBtn.parentElement.classList.remove('show');
+});
+
+
+
+// ====================== Navbar Dropdown For Small Device ========================== //
+
+if (window.matchMedia("(max-width: 991px)").matches) {
+    const menuBtn = document.querySelectorAll('#menu-btn');
+
+    menuBtn.forEach(element => {
+        element.addEventListener('click', () => {
+            var expandableContent = element.parentElement.nextElementSibling;
+
+            if (expandableContent.classList.contains('expanded')) {
+                expandableContent.style.maxHeight = '0';
+            }
+            else {
+                expandableContent.style.maxHeight = expandableContent.getAttribute('data-height').toString();
+            }
+
+            expandableContent.classList.toggle('expanded');
+        });
+    });
 }

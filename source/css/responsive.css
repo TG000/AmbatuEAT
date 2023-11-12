@@ -1,0 +1,112 @@
+/* ============== Large Screen Or Above ============== */
+
+@media (min-width: 992px) {
+    .navbar-icon-collapse {
+        display: none;
+    }
+
+    .multi-carousel-inner {
+        display: flex;
+    }
+    
+    .multi-carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100% / 3);
+    }
+
+    .dropdown-menu {
+        transition: all .3s;
+        display: block;
+        opacity: 0;
+        transform-origin: top;
+        -webkit-transform: scale(1, 0) !important;
+        transform: scale(1, 0) !important;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        margin-top: 0; /* remove the gap so it doesn't close */
+        -webkit-transform: scale(1) !important;
+        transform: scale(1) !important;
+    }
+    
+    .dropdown-btn:focus .dropdown-menu {
+        opacity: 1;
+        margin-top: 0; /* remove the gap so it doesn't close */
+        -webkit-transform: scale(1) !important;
+        transform: scale(1) !important;
+    }    
+}
+
+
+
+/* ============== Medium Screen Or Lower ============== */
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        top: 0 !important;
+        right: 0 !important;
+        position: absolute !important;
+        height: 100vh !important;
+        width: 60% !important;
+        background-color: black !important;
+        transition: all .5s !important;
+        transform: translateX(100%);
+        display: block !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .collapsing, .show {
+        transform: translateX(0%);
+    }
+
+    #navbar-close {
+        transition: all .3s;
+        transform: rotate(90deg);
+    }
+
+    #navbar-close:hover {
+        transition: all .3s;
+        transform: rotate(180deg) !important;
+    }
+
+    .show #navbar-close {
+        transform: rotate(0deg);
+    }
+
+    .sm-d-none {
+        display: none !important;
+    }
+
+    .sm-m-0 {
+        margin: 0;
+    }
+
+    .custom-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s;
+    }
+
+    .intro-second {
+        font-size: 50px;
+    }
+
+    .w-sm-100 {
+        width: 100% !important;
+    }
+
+    .h-sm-fit {
+        height: fit-content !important;
+    }
+
+    .w-sm-50 {
+        width: 50% !important;
+    }
+
+    .details-img {
+        height: 550px !important;
+    }
+}

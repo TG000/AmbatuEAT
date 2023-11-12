@@ -97,126 +97,126 @@ if (window.matchMedia("(min-width: 992px)").matches) {
             }, 600);
         }
     });
+
+    $(function() {
+        $('#carouselDetails').swipe( {
+            swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                if (direction === "left") {
+                    if (indicatorButtonsDetails[0].classList.contains("active")) {
+                        $('.carousel-inner-details').animate({
+                            scrollLeft: 500,
+                        }, 600);
+            
+                        indicatorButtonsDetails[0].classList.remove('active');
+                        indicatorButtonsDetails[1].classList.add('active');
+                    }
+                    else {
+                        $('.carousel-inner-details').animate({
+                            scrollLeft: -500,
+                        }, 600);
+            
+                        indicatorButtonsDetails[0].classList.add('active');
+                        indicatorButtonsDetails[1].classList.remove('active');
+                    }
+                    
+                }
+                else if (direction === "right") {
+                    if (indicatorButtonsDetails[1].classList.contains("active")) {
+                        $('.carousel-inner-details').animate({
+                            scrollLeft: -500,
+                        }, 600);
+            
+                        indicatorButtonsDetails[0].classList.add('active');
+                        indicatorButtonsDetails[1].classList.remove('active');
+                    }
+                    else {
+                        $('.carousel-inner-details').animate({
+                            scrollLeft: 500,
+                        }, 600);
+            
+                        indicatorButtonsDetails[0].classList.remove('active');
+                        indicatorButtonsDetails[1].classList.add('active');
+                    }
+                }
+            }
+        });
+    
+        $('#carouselChefs').swipe( {
+            swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                if (direction === "left") {
+                    if (scrollPosition <= (carouselChefsWidth - (cardChefsWidth * 4))) {
+                        scrollPosition = scrollPosition + cardChefsWidth;
+            
+                        $('.carousel-inner-chefs').animate({
+                            scrollLeft: scrollPosition,
+                        }, 600);
+                    }
+                    else {
+                        scrollPosition = 0;
+            
+                        $('.carousel-inner-chefs').animate({
+                            scrollLeft: scrollPosition,
+                        }, 600);
+                    }
+                }
+                else if (direction === "right") {
+                    if (scrollPosition > 0) {
+                        scrollPosition = scrollPosition - cardChefsWidth;
+            
+                        $('.carousel-inner-chefs').animate({
+                            scrollLeft: scrollPosition,
+                        }, 600);
+                    }
+                    else {
+                        scrollPosition = carouselChefsWidth - (cardChefsWidth * 3);
+            
+                        $('.carousel-inner-chefs').animate({
+                            scrollLeft: scrollPosition,
+                        }, 600);
+                    }
+                }
+            }
+        });
+    
+        $('#carouselPost').swipe( {
+            swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                if (direction === "left") {
+                    if (indicatorButtonsPost[0].classList.contains("active")) {
+                        $('.carousel-inner-post').animate({
+                            scrollLeft: 1300,
+                        }, 600);
+            
+                        indicatorButtonsPost[0].classList.remove('active');
+                        indicatorButtonsPost[1].classList.add('active');
+                    }
+                    else {
+                        $('.carousel-inner-post').animate({
+                            scrollLeft: -1300,
+                        }, 600);
+            
+                        indicatorButtonsPost[0].classList.add('active');
+                        indicatorButtonsPost[1].classList.remove('active');
+                    }
+                }
+                else if (direction === "right") {
+                    if (indicatorButtonsPost[1].classList.contains("active")) {
+                        $('.carousel-inner-post').animate({
+                            scrollLeft: -1300,
+                        }, 600);
+            
+                        indicatorButtonsPost[0].classList.add('active');
+                        indicatorButtonsPost[1].classList.remove('active');
+                    }
+                    else {
+                        $('.carousel-inner-post').animate({
+                            scrollLeft: 1300,
+                        }, 600);
+            
+                        indicatorButtonsPost[0].classList.remove('active');
+                        indicatorButtonsPost[1].classList.add('active');
+                    }
+                }
+            }
+        });
+    });
 }
-
-$(function() {
-    $('#carouselDetails').swipe( {
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-            if (direction === "left") {
-                if (indicatorButtonsDetails[0].classList.contains("active")) {
-                    $('.carousel-inner-details').animate({
-                        scrollLeft: 500,
-                    }, 600);
-        
-                    indicatorButtonsDetails[0].classList.remove('active');
-                    indicatorButtonsDetails[1].classList.add('active');
-                }
-                else {
-                    $('.carousel-inner-details').animate({
-                        scrollLeft: -500,
-                    }, 600);
-        
-                    indicatorButtonsDetails[0].classList.add('active');
-                    indicatorButtonsDetails[1].classList.remove('active');
-                }
-                
-            }
-            else if (direction === "right") {
-                if (indicatorButtonsDetails[1].classList.contains("active")) {
-                    $('.carousel-inner-details').animate({
-                        scrollLeft: -500,
-                    }, 600);
-        
-                    indicatorButtonsDetails[0].classList.add('active');
-                    indicatorButtonsDetails[1].classList.remove('active');
-                }
-                else {
-                    $('.carousel-inner-details').animate({
-                        scrollLeft: 500,
-                    }, 600);
-        
-                    indicatorButtonsDetails[0].classList.remove('active');
-                    indicatorButtonsDetails[1].classList.add('active');
-                }
-            }
-        }
-    });
-
-    $('#carouselChefs').swipe( {
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-            if (direction === "left") {
-                if (scrollPosition <= (carouselChefsWidth - (cardChefsWidth * 4))) {
-                    scrollPosition = scrollPosition + cardChefsWidth;
-        
-                    $('.carousel-inner-chefs').animate({
-                        scrollLeft: scrollPosition,
-                    }, 600);
-                }
-                else {
-                    scrollPosition = 0;
-        
-                    $('.carousel-inner-chefs').animate({
-                        scrollLeft: scrollPosition,
-                    }, 600);
-                }
-            }
-            else if (direction === "right") {
-                if (scrollPosition > 0) {
-                    scrollPosition = scrollPosition - cardChefsWidth;
-        
-                    $('.carousel-inner-chefs').animate({
-                        scrollLeft: scrollPosition,
-                    }, 600);
-                }
-                else {
-                    scrollPosition = carouselChefsWidth - (cardChefsWidth * 3);
-        
-                    $('.carousel-inner-chefs').animate({
-                        scrollLeft: scrollPosition,
-                    }, 600);
-                }
-            }
-        }
-    });
-
-    $('#carouselPost').swipe( {
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-            if (direction === "left") {
-                if (indicatorButtonsPost[0].classList.contains("active")) {
-                    $('.carousel-inner-post').animate({
-                        scrollLeft: 1300,
-                    }, 600);
-        
-                    indicatorButtonsPost[0].classList.remove('active');
-                    indicatorButtonsPost[1].classList.add('active');
-                }
-                else {
-                    $('.carousel-inner-post').animate({
-                        scrollLeft: -1300,
-                    }, 600);
-        
-                    indicatorButtonsPost[0].classList.add('active');
-                    indicatorButtonsPost[1].classList.remove('active');
-                }
-            }
-            else if (direction === "right") {
-                if (indicatorButtonsPost[1].classList.contains("active")) {
-                    $('.carousel-inner-post').animate({
-                        scrollLeft: -1300,
-                    }, 600);
-        
-                    indicatorButtonsPost[0].classList.add('active');
-                    indicatorButtonsPost[1].classList.remove('active');
-                }
-                else {
-                    $('.carousel-inner-post').animate({
-                        scrollLeft: 1300,
-                    }, 600);
-        
-                    indicatorButtonsPost[0].classList.remove('active');
-                    indicatorButtonsPost[1].classList.add('active');
-                }
-            }
-        }
-    });
-});

@@ -1,48 +1,7 @@
 @import url(./reuse.css);
 @import url(./animation.css);
 
-/* ============== Responsive ============== */
-
-@media (min-width: 992px) {
-    .navbar-icon-collapse {
-        display: none;
-    }
-
-    .multi-carousel-inner {
-        display: flex;
-    }
-    
-    .multi-carousel-item {
-        display: block;
-        margin-right: 0;
-        flex: 0 0 calc(100% / 3);
-    }
-}
-
 /* ============== Rewrite / Change some properties to fit our project ============== */
-
-.dropdown-menu {
-    transition: all .3s;
-    display: block;
-    opacity: 0;
-    transform-origin: top;
-    -webkit-transform: scale(1, 0) !important;
-    transform: scale(1, 0) !important;
-}
-
-.dropdown:hover .dropdown-menu {
-    opacity: 1;
-    margin-top: 0; /* remove the gap so it doesn't close */
-    -webkit-transform: scale(1) !important;
-    transform: scale(1) !important;
-}
-
-.dropdown-btn:focus .dropdown-menu {
-    opacity: 1;
-    margin-top: 0; /* remove the gap so it doesn't close */
-    -webkit-transform: scale(1) !important;
-    transform: scale(1) !important;
-}
 
 .dropdown-item:hover {
     color: var(--dark-orange);
@@ -96,6 +55,8 @@
     width: 0% !important;
 }
 
+
+
 /* ============== New ============== */
 
 * {
@@ -114,6 +75,11 @@
 .nav-btn:hover i {
     color: var(--dark-orange) !important;
     transition: all .15s;
+}
+
+.sm-nav-btn {
+    width: 42px;
+    height: 42px;
 }
 
 .stats {
@@ -223,12 +189,16 @@
     height: 550px;
 }
 
-.hover-orange {
+.hover-orange, .hover-child-orange * {
     transition: all .3s;
 }
 
-.hover-orange:hover {
+.hover-orange:hover, .hover-child-orange:hover * {
     color: var(--dark-orange) !important;
+}
+
+.hover-child-orange:active * {
+    color: white !important;
 }
 
 .hover-with-icon span i {
@@ -329,4 +299,24 @@
 
 .img-zoom-in:hover {
     transform: scale(1.1);
+}
+
+.hover-black:hover {
+    color: black !important;
+}
+
+.bg-hover-black:hover {
+    background-color: black !important;
+}
+
+.bg-hover-black:active {
+    background-color: black !important;
+}
+
+.bg-hover-black:focus {
+    background-color: black !important;
+}
+
+.hover-dark:hover {
+    filter: brightness(90%);
 }
