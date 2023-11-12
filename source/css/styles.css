@@ -51,10 +51,18 @@
     right: -5%;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    width: 0% !important;
+.carousel-control-prev .with-icon,
+.carousel-control-next .with-icon {
+    border-radius: 50%;
+    width: 38px !important;
+    height: 38px !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
+.carousel-control-prev .with-icon i,
+.carousel-control-next .with-icon i {
+    color: white !important;
+}
 
 
 /* ============== New ============== */
