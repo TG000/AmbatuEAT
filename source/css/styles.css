@@ -61,6 +61,11 @@
 
 * {
     font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.card {
+    overflow: hidden;
 }
 
 .logo-title {
