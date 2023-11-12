@@ -176,7 +176,7 @@
     }
 
     .h-phone-fit {
-        height: fit-content;
+        height: fit-content !important;
     }
 
     .carousel-control-prev {
