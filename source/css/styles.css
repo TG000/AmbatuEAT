@@ -128,6 +128,10 @@
     color: var(--dark-orange);
 }
 
+.text-orange-always {
+    color: var(--dark-orange) !important;
+}
+
 .underline-orange {
     -webkit-text-decoration-color: var(--dark-orange) !important;
     text-decoration-color: var(--dark-orange) !important;
@@ -331,4 +335,19 @@
 
 .hover-dark:hover {
     filter: brightness(90%);
+}
+
+.admin-nav-active {
+    border-radius: 10px 10px 10px 10px;
+    background-color: var(--dark-orange);
+    color: white;
+}
+
+.bg-blue {
+    background-color: var(--dark-blue);
+}
+
+.non-outline-focus:focus {
+    border: 0 !important;
+    outline: 0 !important;
 }
