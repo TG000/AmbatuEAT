@@ -30,8 +30,6 @@ window.onload = () => {
 
         element.style.maxHeight = '0px';
         element.style.overflow = 'hidden';
-
-        console.log('hello');
     });
 };
 
