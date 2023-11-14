@@ -24,6 +24,15 @@ window.onload = () => {
             }, 300);
         }, 300);
     }, 500);
+
+    dropdown.forEach(element => {
+        dropdownHeight.push(window.getComputedStyle(element).height);
+
+        element.style.maxHeight = '0px';
+        element.style.overflow = 'hidden';
+
+        console.log('hello');
+    });
 };
 
 $(window).scroll(() => {
@@ -69,21 +78,22 @@ navbarCloseBtn.addEventListener('click', () => {
 
 // ====================== Navbar Dropdown For Small Device ========================== //
 
-if (window.matchMedia("(max-width: 991px)").matches) {
-    const menuBtn = document.querySelectorAll('#menu-btn');
+const navBtn = document.querySelectorAll("#menu-btn");
+const dropdown = document.querySelectorAll(".custom-menu");
+const navBtnArr = Array.prototype.slice.call(navBtn);
 
-    menuBtn.forEach(element => {
-        element.addEventListener('click', () => {
-            var expandableContent = element.parentElement.nextElementSibling;
+var dropdownHeight = [];
 
-            if (expandableContent.classList.contains('expanded')) {
-                expandableContent.style.maxHeight = '0';
-            }
-            else {
-                expandableContent.style.maxHeight = expandableContent.getAttribute('data-height').toString();
-            }
+navBtn.forEach(element => {
+    element.addEventListener('click', () => {
+        var index = navBtnArr.indexOf(element);
+        var dropdownMenu = element.parentElement.nextElementSibling;
 
-            expandableContent.classList.toggle('expanded');
-        });
+        if (dropdownMenu.style.maxHeight != '0px') {
+            dropdownMenu.style.maxHeight = '0px';
+        }
+        else {
+            dropdownMenu.style.maxHeight = dropdownHeight[index];
+        }
     });
-}
+});

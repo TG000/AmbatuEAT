@@ -15,17 +15,6 @@
 </head>
 <body>
     <?php
-        if (isset($_GET['control'])) {
-            $tam = $_GET['control'];
-        }
-        else {
-            $tam = '';
-        }
-
-        if ($tam == 'about') {
-
-        }
-
         include("source/pages/normal/back_top.php");
         include("source/pages/normal/navbar.php");
         include("source/pages/normal/home.php");

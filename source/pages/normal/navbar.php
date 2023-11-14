@@ -13,7 +13,7 @@
             <i class="bi bi-list text-light h4 d-flex justify-content-center align-content-center m-0"></i>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-between phone-vh-100" id="navbar-menu">
+        <div class="collapse navbar-collapse justify-content-between phone-vh-100 hide-scroll-bar" id="navbar-menu">
             <button id="navbar-close" class="btn mt-5 mb-3 rounded-circle p-2 bg-orange hover-child-orange d-lg-none ms-4 ms-lg-0" style="width: 42px; height: 42px;" onclick="this.blur()">
                 <i class="bi bi-x-lg text-light d-flex justify-content-center align-items-center m-0"></i>
             </button>
@@ -61,7 +61,7 @@
                             <i class="bi bi-chevron-down d-flex justify-content-center align-items-center text-light"></i>
                         </span>
                     </div>
-                    <div class="custom-menu" data-height="626px">
+                    <div class="custom-menu">
                         <div class="dropdown-menu d-flex flex-column bg-black pb-0">
                             <hr class="hr d-lg-none border-light my-0 mt-2">
                             <div class="d-flex flex-column py-0 my-3 bg-black mx-4 d-lg-none">
@@ -115,7 +115,7 @@
                             <i class="bi bi-chevron-down d-flex justify-content-center align-items-center text-light"></i>
                         </span>
                     </div>
-                    <div class="custom-menu" data-height="155px">
+                    <div class="custom-menu">
                         <div class="dropdown-menu d-flex flex-column bg-black pb-0 mt-2">
                             <hr class="hr d-lg-none border-light my-0">
                             <div class="d-flex flex-column py-0 mt-3 bg-black mx-4 d-lg-none">
