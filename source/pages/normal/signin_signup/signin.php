@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="d-flex flex-column justify-content-start h-50">
-                    <button class="btn px-5 py-3 text-light bg-orange fs-5" style="width: fit-content;">Sign In</button>
+                    <button class="btn px-5 py-3 text-light bg-orange fs-5" style="width: fit-content;" type="submit">Sign In</button>
                     <div class="d-flex align-items-center h-25 justify-content-evenly my-5" style="width: 60%;">
                         <span class="text-light" style="width: 40%;">Or sign in with</span>
                         <div class="d-flex justify-content-evenly" style="width: 60%;">
