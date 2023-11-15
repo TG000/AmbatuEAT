@@ -27,7 +27,7 @@
 </section>
 
 <!-- Story -->
-<section class="story bg-light my-4 section-big h-sm-fit">
+<section class="story bg-light my-4 h-sm-fit" style="height: fit-content !important">
     <div class="container d-flex flex-column flex-lg-row align-items-center h-100 py-5 ">
         <div class="w-50 w-sm-100">
             <h2 class=" text-orange display-6 font-fancy">Welcome to Ambatueat</h2>
@@ -170,7 +170,7 @@
 </section>
 
 <!-- Chefs -->
-<section class="chefs section-extra-big h-sm-fit overflow-hidden">
+<section class="chefs h-sm-fit overflow-hidden" style="height: fit-content">
     <div class="container mb-5 p-md-5 p-5 px-lg-5 px-2">
         <div class="p-md-5 p-3 pb-5 px-0">
             <h2 class=" text-orange display-6 font-fancy py-2 m-0 text-center">Meet</h2>
@@ -247,7 +247,7 @@
 </section>
 
 <!-- Post -->
-<section class="post my-5 py-5 pb-4">
+<section class="post my-5 py-5 pb-4" style="height: fit-content">
     <div class="container">
         <div id="carouselPost" class="carousel slide">
             <div class="carousel-inner carousel-draggable carousel-inner-post multi-carousel-inner">
