@@ -1,5 +1,5 @@
 <footer>
-    <div class="section-medium bg-less-black h-sm-fit">
+    <div class="bg-less-black h-sm-fit" style="height: fit-content">
         <div class="container h-100 d-flex flex-column flex-lg-row justify-content-between align-items-start py-5 overflow-hidden">
             <div class="d-flex flex-column justify-content-center py-3 my-lg-5 my-2 col-lg-3">
                 <span class="h4 text-light fw-semibold m-0 text-decoration-underline underline-orange">ADDRESS</span>
@@ -46,8 +46,8 @@
         </div>
     </div>
 
-    <div class="section-extra-small bg-black h-sm-fit">
-        <div class="container h-100 h-sm-fit d-flex flex-column flex-lg-row justify-content-lg-between justify-content-evenly py-lg-0 py-4 align-items-center ">
+    <div class="bg-black h-sm-fit" style="height: fit-content">
+        <div class="container h-100 h-sm-fit d-flex flex-column flex-lg-row justify-content-lg-between justify-content-evenly py-4 align-items-center ">
             <div class="text-white-gray py-lg-0 pb-1">
                 © 2023 All Rights Reserved
             </div>
