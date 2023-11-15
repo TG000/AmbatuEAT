@@ -1,5 +1,20 @@
-@import url(./reuse.css);
-@import url(./animation.css);
+:root {
+    /* --black: black; 1 trong những tông màu chính (cơ mà dùng color: black cho nhanh) */
+    /* --white: white 1 trong những tông màu chính (cơ mà dùng color: white cho nhanh) */
+    --dark-orange: #e47b1f;
+    --golden-yellow: #ffcd09;
+    --white-gray: #b5b3b3;
+    --gray-white: #f7f7f7;
+    --dark-gray: #424242;
+    --light-gray: #f7f6f6;
+    --less-black: #101010;
+    --light-blue: #789ecd;
+    --dark-blue: #1c4eaa;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+
 
 /* ============== Rewrite / Change some properties to fit our project ============== */
 
@@ -63,6 +78,7 @@
 .carousel-control-next .with-icon i {
     color: white !important;
 }
+
 
 
 /* ============== New ============== */
@@ -387,4 +403,35 @@
 
 .bg-light-gray {
     background-color: var(--light-gray);
+}
+
+
+
+/* ============== Animation ============== */
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

@@ -15,17 +15,19 @@
 </head>
 <body>
     <?php
-        include("source/pages/normal/back_top.php");
-        include("source/pages/normal/navbar.php");
-        include("source/pages/normal/home.php");
-        include("source/pages/normal/footer.php");
+        echo '<style>html, body {height: 100%}</style>';
+        include("source/pages/admincp/config/config.php");
+        include("source/pages/normal/signin_signup/signin.php");
+
+        // include("source/pages/normal/back_top.php");
+        // include("source/pages/normal/navbar.php");
+        // include("source/pages/normal/home.php");
+        // include("source/pages/normal/footer.php");
     ?>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./source/js/jquery.touchSwipe.min.js"></script>
-    <script src="./source/js/carousel.js"></script>
-    <script src="./source/js/animated.js"></script>
     <script src="./source/js/index.js"></script>
 </body>
 </html>
