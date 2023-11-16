@@ -30,7 +30,7 @@ window.onload = () => {
         }, 500);
     }
     catch {
-        
+
     }
     
     dropdown.forEach(element => {

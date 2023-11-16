@@ -17,12 +17,21 @@
     <?php
         echo '<style>html, body {height: 100%}</style>';
         include("source/pages/admincp/config/config.php");
-        include("source/pages/normal/signin_signup/signin.php");
 
-        // include("source/pages/normal/back_top.php");
-        // include("source/pages/normal/navbar.php");
-        // include("source/pages/normal/home.php");
-        // include("source/pages/normal/footer.php");
+        if ($login == false) {
+            include("source/pages/normal/signin_signup/signin.php");
+        }
+        else {
+            if ($logintype == 0) {
+                include("source/pages/normal/back_top.php");
+                include("source/pages/normal/navbar.php");
+                include("source/pages/normal/home.php");
+                include("source/pages/normal/footer.php");
+            }
+            else {
+                include("source/pages/admincp/modules/control.php");
+            }
+        }
     ?>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
