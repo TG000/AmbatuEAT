@@ -17,7 +17,12 @@
 
         $result = mysqli_query($connect, $query);
 
+        $logged_in_user = mysqli_fetch_array($result);
+        echo $logged_in_user['role'];
+
         if (mysqli_num_rows($result) === 1) {
+            
+
             header('Location: index.php?page=home');
             $_SESSION['isLoggedIn'] = true;
         }

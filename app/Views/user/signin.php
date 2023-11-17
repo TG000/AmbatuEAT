@@ -1,6 +1,6 @@
 <div class="d-flex h-100 w-100">
     <div class="h-100" style="width: 60%;">
-        <img class="w-100 h-100 object-fit-cover" src="./other/img/intro_3.jpg" alt="Background">
+        <img class="w-100 h-100 object-fit-cover" src="./public/img/intro_3.jpg" alt="Background">
     </div>
 
     <div class="h-100 bg-dark px-5 d-flex flex-column justify-content-center align-items-start" style="width: 40%;">

@@ -5,7 +5,7 @@
         </a>
 
         <a class="navbar-brand sm-m-0 fw-semibold py-0 d-flex align-items-center" href="index.php">
-            <img class="px-2 user-select-none" src="./other/img/logo.png" alt="Logo" height="50">
+            <img class="px-2 user-select-none" src="./public/img/logo.png" alt="Logo" height="50">
             <h3 class="h4 my-0 text-light user-select-none">AMBATU<span class="logo-title">EAT</span></h3>
         </a>
 

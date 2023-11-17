@@ -5,8 +5,5 @@ function signOut() {
         data: {
             action: 'sign_out'
         },
-        success: function(html) {
-            alert(html);
-        }
     });
 }

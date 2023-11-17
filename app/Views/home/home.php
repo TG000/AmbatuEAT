@@ -3,13 +3,13 @@
     <div class="carousel slide carousel-fade z-0 position-absolute w-100 vh-100 overflow-hidden" data-bs-ride="carousel">
         <div class="carousel-inner vh-100">
             <div class="carousel-item active vh-100">
-                <img class="d-block h-100 w-100 object-fit-cover" src="./other/img/intro.jpg" alt="First slide">
+                <img class="d-block h-100 w-100 object-fit-cover" src="./public/img/intro.jpg" alt="First slide">
             </div>
             <div class="carousel-item vh-100">
-                <img class="d-block h-100 w-100 object-fit-cover" src="./other/img/intro_2.jpg" alt="Second slide">
+                <img class="d-block h-100 w-100 object-fit-cover" src="./public/img/intro_2.jpg" alt="Second slide">
             </div>
             <div class="carousel-item vh-100">
-                <img class="d-block h-100 w-100 object-fit-cover" src="./other/img/intro_3.jpg" alt="Third slide">
+                <img class="d-block h-100 w-100 object-fit-cover" src="./public/img/intro_3.jpg" alt="Third slide">
             </div>
         </div>
     </div>
@@ -45,7 +45,7 @@
         </div>
 
         <div class="w-50 w-sm-100 d-flex justify-content-lg-end justify-content-center my-lg-0 my-3 pt-lg-0 pt-5">
-            <img class="w-75 w-sm-50 w-phone-75" src="./other/img/story.jpg" alt="Story Image">
+            <img class="w-75 w-sm-50 w-phone-75" src="./public/img/story.jpg" alt="Story Image">
         </div>
     </div>
 </section>
@@ -94,7 +94,7 @@
             <div class="carousel-inner carousel-draggable carousel-inner-details multi-carousel-inner">
                 <div class="carousel-item multi-carousel-item active">
                     <div class="card position-relative mx-3">
-                        <img src="./other/img/details_1.png" class="details-img w-100 object-fit-cover" alt="Restaurant">
+                        <img src="./public/img/details_1.png" class="details-img w-100 object-fit-cover" alt="Restaurant">
                         <h4 class="h5 w-100 h-100 pb-4 d-flex justify-content-center align-items-end bg-opacity-50 bottom-0 m-0 text-light position-absolute z-1 details-title text-center user-select-none">RESTAURANT</h4>
 
                         <div class="card-details position-absolute z-2 details-popup m-4 d-flex flex-column justify-content-center align-items-center bg-black-opa-8">
@@ -106,7 +106,7 @@
                 </div>
                 <div class="carousel-item multi-carousel-item">
                     <div class="card position-relative mx-3">
-                        <img src="./other/img/details_2.jpg" class="details-img w-100 object-fit-cover" alt="Food Ordering">
+                        <img src="./public/img/details_2.jpg" class="details-img w-100 object-fit-cover" alt="Food Ordering">
                         <h4 class="h5 w-100 h-100 pb-4 d-flex justify-content-center align-items-end bg-opacity-50 bottom-0 m-0 text-light position-absolute z-1 details-title text-center user-select-none">FOOD ORDERING</h4>
 
                         <div class="card-details position-absolute z-2 details-popup m-4 d-flex flex-column justify-content-center align-items-center bg-black-opa-8">
@@ -118,7 +118,7 @@
                 </div>
                 <div class="carousel-item multi-carousel-item">
                     <div class="card position-relative mx-3">
-                        <img src="./other/img/details_3.jpg" class="details-img w-100 object-fit-cover" alt="Wine & Cocktails">
+                        <img src="./public/img/details_3.jpg" class="details-img w-100 object-fit-cover" alt="Wine & Cocktails">
                         <h4 class="h5 w-100 h-100 pb-4 d-flex justify-content-center align-items-end bg-opacity-50 bottom-0 m-0 text-light position-absolute z-1 details-title text-center user-select-none">WINE & COCKTAILS</h4>
 
                         <div class="card-details position-absolute z-2 details-popup m-4 d-flex flex-column justify-content-center align-items-center bg-black-opa-8">
@@ -130,7 +130,7 @@
                 </div>
                 <div class="carousel-item multi-carousel-item">
                     <div class="card position-relative mx-3">
-                        <img src="./other/img/details_4.jpg" class="details-img w-100 object-fit-cover" alt="Vietnamese Cuisine">
+                        <img src="./public/img/details_4.jpg" class="details-img w-100 object-fit-cover" alt="Vietnamese Cuisine">
                         <h4 class="h5 w-100 h-100 pb-4 d-flex justify-content-center align-items-end bg-opacity-50 bottom-0 m-0 text-light position-absolute z-1 details-title text-center user-select-none">VIETNAMESE CUISINE</h4>
 
                         <div class="card-details position-absolute z-2 details-popup m-4 d-flex flex-column justify-content-center align-items-center bg-black-opa-8">
@@ -183,31 +183,31 @@
             <div id="carouselChefs-inner" class="carousel-inner carousel-draggable carousel-inner-chefs multi-carousel-inner">
                 <div class="carousel-item carousel-chefs-item multi-carousel-item active">
                     <div class="card-chefs d-flex flex-column mx-3 px-lg-4 px-4">
-                        <img src="./other/img/chef.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-4" alt="Restaurant">
+                        <img src="./public/img/chef.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-4" alt="Restaurant">
                         <h4 class="user-select-none h4 bg-white h-25 d-flex flex-column align-content-around justify-content-center align-items-center text-dark fw-semibold text-center w-100 mb-lg-4 mb-4  py-3 py-lg-0">Tuân Tuấn Võ Mẹ<span class="h6 text-orange mt-2">Pastry Chef</span></h4>
                     </div>
                 </div>
                 <div class="carousel-item carousel-chefs-item multi-carousel-item">
                     <div class="card-chefs d-flex flex-column mx-3 px-lg-4 px-4">
-                        <img src="./other/img/chef_2.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-4" alt="Restaurant">
+                        <img src="./public/img/chef_2.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-4" alt="Restaurant">
                         <h4 class="user-select-none h4 bg-white h-25 d-flex flex-column align-content-around justify-content-center align-items-center text-dark fw-semibold text-center w-100 mb-lg-4 mb-4  py-3 py-lg-0">Tuân Tuấn Võ Con<span class="h6 text-orange mt-2">Roast Chef</span></h4>
                     </div>
                 </div>
                 <div class="carousel-item carousel-chefs-item multi-carousel-item">
                     <div class="card-chefs d-flex flex-column mx-3 px-lg-4 px-4">
-                        <img src="./other/img/chef_3.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-4" alt="Restaurant">
+                        <img src="./public/img/chef_3.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-4" alt="Restaurant">
                         <h4 class="user-select-none h4 bg-white h-25 d-flex flex-column align-content-around justify-content-center align-items-center text-dark fw-semibold text-center w-100 mb-lg-4 mb-4  py-3 py-lg-0">Tuân Tuấn Võ Cha<span class="h6 text-orange mt-2">Sauce Chef</span></h4>
                     </div>
                 </div>
                 <div class="carousel-item carousel-chefs-item multi-carousel-item">
                     <div class="card-chefs d-flex flex-column mx-3 px-lg-4 px-4">
-                        <img src="./other/img/chef_4.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-4" alt="Restaurant">
+                        <img src="./public/img/chef_4.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-4" alt="Restaurant">
                         <h4 class="user-select-none h4 bg-white h-25 d-flex flex-column align-content-around justify-content-center align-items-center text-dark fw-semibold text-center w-100 mb-lg-4 mb-4  py-3 py-lg-0">Johnny Black<span class="h6 text-orange mt-2">Sous Chef</span></h4>
                     </div>
                 </div>
                 <div class="carousel-item multi-carousel-item">
                     <div class="card-chefs d-flex flex-column mx-3 px-lg-4 px-4">
-                        <img src="./other/img/chef_5.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-4" alt="Restaurant">
+                        <img src="./public/img/chef_5.jpg" class="chefs-img object-fit-cover w-100 mt-lg-4 mt-4" alt="Restaurant">
                         <h4 class="user-select-none h4 bg-white h-25 d-flex flex-column align-content-around justify-content-center align-items-center text-dark fw-semibold text-center w-100 mb-lg-4 mb-4  py-3 py-lg-0">Ambatunat<span class="h6 text-orange mt-2">Head Chef</span></h4>
                     </div>
                 </div>
@@ -254,7 +254,7 @@
                 <div class="carousel-item multi-carousel-item active">
                     <div class="card position-relative mx-3">
                         <a href="#" class="overflow-hidden">
-                            <img src="./other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            <img src="./public/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
                         </a>
                         <div class="d-flex flex-column justify-content-evenly m-5">
                             <span class="h6 text-secondary">February 25, 2019</span>
@@ -267,7 +267,7 @@
                 <div class="carousel-item multi-carousel-item">
                     <div class="card position-relative mx-3">
                         <a href="#" class="overflow-hidden">
-                            <img src="./other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            <img src="./public/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
                         </a>
                         <div class="d-flex flex-column justify-content-evenly m-5">
                             <span class="h6 text-secondary">February 25, 2020</span>
@@ -280,7 +280,7 @@
                 <div class="carousel-item multi-carousel-item">
                     <div class="card position-relative mx-3">
                         <a href="#" class="overflow-hidden">
-                            <img src="./other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            <img src="./public/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
                         </a>
                         <div class="d-flex flex-column justify-content-evenly m-5">
                             <span class="h6 text-secondary">February 25, 2021</span>
@@ -293,7 +293,7 @@
                 <div class="carousel-item multi-carousel-item">
                     <div class="card position-relative mx-3">
                         <a href="#" class="overflow-hidden">
-                            <img src="./other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            <img src="./public/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
                         </a>
                         <div class="d-flex flex-column justify-content-evenly m-5">
                             <span class="h6 text-secondary">February 25, 2022</span>
@@ -306,7 +306,7 @@
                 <div class="carousel-item multi-carousel-item">
                     <div class="card position-relative mx-3">
                         <a href="#" class="overflow-hidden">
-                            <img src="./other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            <img src="./public/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
                         </a>
                         <div class="d-flex flex-column justify-content-evenly m-5">
                             <span class="h6 text-secondary">February 25, 2023</span>
@@ -319,7 +319,7 @@
                 <div class="carousel-item multi-carousel-item">
                     <div class="card position-relative mx-3">
                         <a href="#" class="overflow-hidden">
-                            <img src="./other/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
+                            <img src="./public/img/details_1.png" class="details-img w-100 object-fit-cover img-zoom-in" alt="Restaurant">
                         </a>
                         <div class="d-flex flex-column justify-content-evenly m-5">
                             <span class="h6 text-secondary">February 25, 2024</span>

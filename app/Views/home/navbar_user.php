@@ -5,7 +5,7 @@
         </a>
 
         <a class="navbar-brand sm-m-0 fw-semibold py-0 d-flex align-items-center" href="index.php">
-            <img class="px-2 user-select-none" src="./other/img/logo.png" alt="Logo" height="50">
+            <img class="px-2 user-select-none" src="./public/img/logo.png" alt="Logo" height="50">
             <h3 class="h4 my-0 text-light user-select-none">AMBATU<span class="logo-title">EAT</span></h3>
         </a>
 
@@ -169,12 +169,12 @@
 
                 <li class="nav-item py-3 px-2 sm-d-none position-relative">
                     <button type="button" class="p-0 btn rounded-5 border-opacity-25 border-light nav-btn" id="navbar-dropdown">
-                        <img class="w-100 h-100 object-fit-cover rounded-circle" src="./other/img/chef.jpg" alt="User Image">
+                        <img class="w-100 h-100 object-fit-cover rounded-circle" src="./public/img/chef.jpg" alt="User Image">
                     </button>
                     <div class="d-none font-child-nice flex-column rounded-4 bg-dark position-absolute top-100 end-0 py-1 z-3" style="width: 300px">
                         <div class="d-flex p-3">
                             <div class="d-flex align-items-start pe-3">
-                                <img class="rounded-circle object-fit-cover" src="./other/img/chef.jpg" alt="User Image" style="width: 40px; height: 40px">
+                                <img class="rounded-circle object-fit-cover" src="./public/img/chef.jpg" alt="User Image" style="width: 40px; height: 40px">
                             </div>
                             <div class="d-flex flex-column justify-content-start">
                                 <span class="text-light fs-6">Tuân Tuấn Võ Cha</span>
