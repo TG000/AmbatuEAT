@@ -104,15 +104,15 @@
 }
 
 .stats {
-    background-image: url(../../other/img/stats.jpg);
+    background-image: url(../img/stats.jpg);
 }
 
 .menus {
-    background-image: url(../../other/img/menus.jpg);
+    background-image: url(../img/menus.jpg);
 }
 
 .news {
-    background-image: url(../../other/img/news.jpg);
+    background-image: url(../img/news.jpg);
 }
 
 .focus-orange {

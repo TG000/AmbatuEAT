@@ -26,7 +26,7 @@
                             <input class="form-check-input my-0" type="checkbox">
                             <span class="text-light ps-2 fs-5">Remember Me</span>
                         </div>
-                        <a href="#" class="text-light fs-5">Create an account?</a>
+                        <a href="index.php?page=signup" class="text-light fs-5">Create an account?</a>
                     </div>
                 </div>
 

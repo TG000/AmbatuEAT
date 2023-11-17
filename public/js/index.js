@@ -470,7 +470,7 @@ const userBtnDropdown = document.querySelector("#navbar-dropdown");
 
 if (userBtnDropdown != null) {
     userBtnDropdown.addEventListener('click', () => {
-        dropdown = userBtnDropdown.nextElementSibling;
+        var dropdown = userBtnDropdown.nextElementSibling;
         if (dropdown.classList.contains("d-none")) {
             dropdown.classList.remove('d-none');
             dropdown.classList.add('d-flex');
