@@ -167,10 +167,84 @@
                     </button>
                 </li>
 
-                <li class="nav-item py-3 px-2 sm-d-none">
-                    <button type="button" class="btn rounded-5 border-opacity-25 border-light nav-btn">
+                <li class="nav-item py-3 px-2 sm-d-none position-relative">
+                    <button type="button" class="btn rounded-5 border-opacity-25 border-light nav-btn" id="navbar-dropdown">
                         <i class="bi bi-person-fill text-light"></i>
                     </button>
+                    <div class="font-nice d-flex flex-column rounded-4 bg-dark position-absolute top-100 end-0 py-1" style="width: 300px">
+                        <div class="d-flex p-3">
+                            <div class="d-flex align-items-start pe-3">
+                                <img class="rounded-circle object-fit-cover" src="./other/img/chef.jpg" alt="User Image" style="width: 40px; height: 40px">
+                            </div>
+                            <div class="d-flex flex-column justify-content-start">
+                                <span class="text-light fs-6">Tuân Tuấn Võ Cha</span>
+                                <span class="text-light fs-6">0913123445</span>
+                            </div>
+                        </div>
+                        <hr class="hr my-0 text-light">
+                        <div class="d-flex w-100 py-2 flex-column">
+                            <a href="#" class="px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-light">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fs-5 bi bi-person-square d-flex justify-content-center align-items-center pe-3"></i>
+                                    <span>Switch accounts</span>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <a href="#" class="px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-light">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fs-5 bi bi-box-arrow-right d-flex justify-content-center align-items-center pe-3"></i>
+                                    <span>Sign out</span>
+                                </div>
+                            </a>
+                        </div>
+                        <hr class="hr my-0 text-light">
+                        <div class="d-flex w-100 py-2 flex-column">
+                            <a href="#" class="px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-light">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fs-5 bi bi-coin d-flex justify-content-center align-items-center pe-3"></i>
+                                    <span>Membership</span>
+                                </div>
+                            </a>
+                            <a href="#" class="px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-light">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fs-5 bi bi-person-up d-flex justify-content-center align-items-center pe-3"></i>
+                                    <span>Become a distributor</span>
+                                </div>
+                            </a>
+                        </div>
+                        <hr class="hr my-0 text-light">
+                        <div class="d-flex w-100 py-2 flex-column">
+                            <a href="#" class="px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-light">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fs-5 bi bi-cash-coin d-flex justify-content-center align-items-center pe-3"></i>
+                                    <span>Transaction history</span>
+                                </div>
+                            </a>
+                            <a href="#" class="px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-light">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fs-5 bi bi-moon d-flex justify-content-center align-items-center pe-3"></i>
+                                    <span>Theme: Device's theme</span>
+                                </div>
+                            </a>
+                            <a href="#" class="px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-light">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fs-5 bi bi-translate d-flex justify-content-center align-items-center pe-3"></i>
+                                    <span>Language: English</span>
+                                </div>
+                            </a>
+                        </div>
+                        <hr class="hr my-0 text-light">
+                        <div class="d-flex w-100 py-2 flex-column">
+                            <a href="#" class="px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-light">
+                                <div class="d-flex justify-content-center">
+                                    <i class="fs-5 bi bi-gear d-flex justify-content-center align-items-center pe-3"></i>
+                                    <span>Settings</span>
+                                </div>
+                            </a>
+                        </div>
+                        <hr class="hr my-0 text-light">
+                        <div></div>
+                    </div>
                 </li>
             </ul>
         </div>
