@@ -4,14 +4,11 @@
     require_once __DIR__ . '/app/Controllers/AdminController.php';
     require_once __DIR__ . '/app/Controllers/UserController.php';
     require_once __DIR__ . '/config/database.php';
+    require_once __DIR__ . '/config/process.php';
 
     // Route incoming requests
     if (isset($_GET['page'])) {
         switch ($_GET['page']) {
-            case 'home':
-                $controller = new HomeController();
-                $controller->user(__DIR__);
-                break;
             case 'signin':
                 $controller = new UserController();
                 $controller->signin(__DIR__);

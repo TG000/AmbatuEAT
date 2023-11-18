@@ -11,11 +11,11 @@
                     <form id="signin-form" method="post" autocomplete="off">
                         <div class="my-3 border-bottom d-flex align-items-center" style="height: 50px;">
                             <i class="bi bi-person-fill text-light"></i>
-                            <input name="username" class="bg-dark border-0 ps-3 w-100 h-100 text-light h5 my-0 non-outline-focus" type="text" placeholder="Username">
+                            <input name="username" class="bg-dark border-0 ps-3 w-100 h-100 text-light h5 my-0 non-outline-focus" type="text" placeholder="Username" id="username">
                         </div>
                         <div class="my-3 border-bottom d-flex align-items-center position-relative" style="height: 50px;">
                             <i class="bi bi-lock-fill text-light"></i>
-                            <input name="password" class="bg-dark border-0 ps-3 w-100 h-100 text-light h5 my-0 non-outline-focus" type="password" placeholder="Password">
+                            <input name="password" class="bg-dark border-0 ps-3 w-100 h-100 text-light h5 my-0 non-outline-focus" type="password" placeholder="Password" id="password">
                             <button class="btn d-flex justify-content-center text-light bg-orange hover-with-icon align-items-center position-absolute end-0 my-auto rounded-2" type="button" style="width: 35px !important; height: 35px;">
                                 <i class="bi bi-key-fill d-flex align-items-center justify-content-center"></i>
                             </button>

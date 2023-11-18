@@ -187,7 +187,9 @@
                     <div class="d-flex flex-column justify-content-evenly h-100 mx-4">
                         <span class="text-end text-secondary">Welcome back</span>
                         <span class="fs-5">
-                            Admin dep trai
+                            <?php
+                                echo $_SESSION['name']; 
+                            ?>
                         </span>
                     </div>
                     <button class="p-0 rounded-circle border-0" style="width: 66px; height: 66px;" id="navbar-dropdown">
@@ -199,8 +201,16 @@
                                 <img class="rounded-circle object-fit-cover" src="./public/img/chef.jpg" alt="User Image" style="width: 40px; height: 40px">
                             </div>
                             <div class="d-flex flex-column justify-content-start">
-                                <span class="text-light fs-6">Tuân Tuấn Võ Cha</span>
-                                <span class="text-light fs-6">0913123445</span>
+                                <span class="text-light fs-6">
+                                    <?php 
+                                        echo $_SESSION['name'];
+                                    ?>
+                                </span>
+                                <span class="text-light fs-6">
+                                    <?php 
+                                        echo $_SESSION['phone_number']; 
+                                    ?>
+                                </span>
                             </div>
                         </div>
                         <hr class="hr my-0 text-light">
@@ -212,12 +222,13 @@
                                 </div>
                                 <i class="bi bi-chevron-right"></i>
                             </a>
-                            <a href="index.php" onclick="signOut()" class="px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-dark-gray">
+                            <form class="d-none" id="signout-frm" method="post"></form>
+                            <button name="signout-btn" type="submit" class="border-0 bg-dark px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-dark-gray" form="signout-frm">
                                 <div class="d-flex justify-content-center">
                                     <i class="fs-5 bi bi-box-arrow-right d-flex justify-content-center align-items-center pe-3"></i>
                                     <span>Sign out</span>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                         <hr class="hr my-0 text-light">
                         <div class="d-flex w-100 py-2 flex-column">

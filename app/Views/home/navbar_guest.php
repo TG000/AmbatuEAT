@@ -158,7 +158,7 @@
                             <i class="bi bi-search d-flex justify-content-center align-items-center pe-2 pb-1"></i>
                         </button>
                     </div>
-                    <button class="btn w-50 mx-auto my-4 rounded-start-5 rounded-end-5 bg-orange text-light">Sign In</button>
+                    <a href="index.php?page=signin" class="btn w-50 mx-auto my-4 rounded-start-5 rounded-end-5 bg-orange text-light">Sign In</a>
                 </div>
 
                 <li class="nav-item py-3 px-2 sm-d-none">

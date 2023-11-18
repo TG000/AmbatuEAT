@@ -151,14 +151,57 @@
                         </li>
                     </div>
                     <hr class="hr d-lg-none border-light m-0 mb-3">
-
-                    <div class="input-group mx-auto mt-3 d-flex align-items-center subscribe-form w-75">
+                    <div class="input-group mx-auto my-3 d-flex align-items-center subscribe-form w-75">
                         <input type="text" class="user-select-none form-control bg-less-black text-white-gray rounded-start-5 border-end-0 h-auto px-3" placeholder="Search" style="border: 1px solid gray">
                         <button class="btn text-light h6 bg-orange m-0 rounded-end-5" type="button">
                             <i class="bi bi-search d-flex justify-content-center align-items-center pe-2 pb-1"></i>
                         </button>
                     </div>
-                    <button class="btn w-50 mx-auto my-4 rounded-start-5 rounded-end-5 bg-orange text-light">Sign In</button>
+                    <hr class="hr d-lg-none border-light m-0 my-3">
+                    <li class="dropdown position-static py-2 py-lg-3 mx-0 mb-2 mb-lg-0">
+                        <div class="d-flex justify-content-between align-items-center d-lg-none mx-4">
+                            <a class="w-100 nav-link py-2 text-light fw-semibold user-select-none d-flex align-items-center" data-toggle="dropdown">
+                                <img class="object-fit-cover rounded-circle me-3" width="40px" height="40px" src="./public/img/chef.jpg" alt="User Image">
+                                <span class="text-light fs-5 me-3">
+                                    <?php
+                                        echo $_SESSION['name'];
+                                    ?>
+                                </span>
+                            </a>
+                            <span id="menu-btn" role="button" class="btn h-75 d-flex justify-content-center align-items-center py-2 px-2 rounded-1 bg-orange text-dark hover-orange hover-child-orange">
+                                <i class="bi bi-chevron-down d-flex justify-content-center align-items-center text-light"></i>
+                            </span>
+                        </div>
+                        <div class="custom-menu">
+                            <div class="dropdown-menu d-flex flex-column bg-black pb-0 mt-2">
+                                <hr class="hr d-lg-none border-light my-0">
+                                <div class="d-flex flex-column py-0 my-3 bg-black mx-4 d-lg-none">
+                                    <a class="dropdown-item user-select-none text-light py-2 m-0 hover-orange bg-hover-black" href="index.php?control=blog&id=2" onclick="this.blur()">Switch account</a>
+                                    <a class="dropdown-item user-select-none text-light py-2 m-0 hover-orange bg-hover-black" href="index.php?control=blog&id=3" onclick="this.blur()">Sign out</a>
+                                </div>
+                                <hr class="hr text-light my-0">
+                                <div class="d-flex flex-column py-0 my-3 bg-black mx-4 d-lg-none">
+                                    <a class="dropdown-item user-select-none text-light py-2 m-0 hover-orange bg-hover-black" href="index.php?control=blog&id=2" onclick="this.blur()">Memberships</a>
+                                    <a class="dropdown-item user-select-none text-light py-2 m-0 hover-orange bg-hover-black" href="index.php?control=blog&id=3" onclick="this.blur()">Become a distributor</a>
+                                </div>
+                                <hr class="hr text-light my-0">
+                                <div class="d-flex flex-column py-0 my-3 bg-black mx-4 d-lg-none">
+                                    <a class="dropdown-item user-select-none text-light py-2 m-0 hover-orange bg-hover-black" href="index.php?control=blog&id=2" onclick="this.blur()">Purchases</a>
+                                    <a class="dropdown-item user-select-none text-light py-2 m-0 hover-orange bg-hover-black" href="index.php?control=blog&id=3" onclick="this.blur()">Appearance: Device theme</a>
+                                    <a class="dropdown-item user-select-none text-light py-2 m-0 hover-orange bg-hover-black" href="index.php?control=blog&id=3" onclick="this.blur()">Language: English</a>
+                                </div>
+                                <hr class="hr text-light my-0">
+                                <div class="d-flex flex-column py-0 my-3 bg-black mx-4 d-lg-none">
+                                    <a class="dropdown-item user-select-none text-light py-2 m-0 hover-orange bg-hover-black" href="index.php?control=blog&id=2" onclick="this.blur()">Settings</a>
+                                </div>
+                                <hr class="hr text-light my-0">
+                                <div class="d-flex flex-column py-0 my-3 bg-black mx-4 d-lg-none">
+                                    <a class="dropdown-item user-select-none text-light py-2 m-0 hover-orange bg-hover-black" href="index.php?control=blog&id=2" onclick="this.blur()">Help</a>
+                                    <a class="dropdown-item user-select-none text-light py-2 m-0 hover-orange bg-hover-black" href="index.php?control=blog&id=3" onclick="this.blur()">Send feedback</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </div>
 
                 <li class="nav-item py-3 px-2 sm-d-none">
@@ -177,8 +220,16 @@
                                 <img class="rounded-circle object-fit-cover" src="./public/img/chef.jpg" alt="User Image" style="width: 40px; height: 40px">
                             </div>
                             <div class="d-flex flex-column justify-content-start">
-                                <span class="text-light fs-6">Tuân Tuấn Võ Cha</span>
-                                <span class="text-light fs-6">0913123445</span>
+                                <span class="text-light fs-6">
+                                    <?php
+                                        echo $_SESSION['name'];
+                                    ?>
+                                </span>
+                                <span class="text-light fs-6">
+                                    <?php
+                                        echo $_SESSION['phone_number'];
+                                    ?>
+                                </span>
                             </div>
                         </div>
                         <hr class="hr my-0 text-light">
@@ -190,12 +241,13 @@
                                 </div>
                                 <i class="bi bi-chevron-right"></i>
                             </a>
-                            <a href="index.php" onclick="signOut()" class="px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-dark-gray">
+                            <form class="d-none" id="signout-frm" method="post"></form>
+                            <button name="signout-btn" type="submit" class="border-0 bg-dark px-3 py-2 d-flex justify-content-between w-100 text-decoration-none text-light bg-hover-dark-gray" form="signout-frm">
                                 <div class="d-flex justify-content-center">
                                     <i class="fs-5 bi bi-box-arrow-right d-flex justify-content-center align-items-center pe-3"></i>
                                     <span>Sign out</span>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                         <hr class="hr my-0 text-light">
                         <div class="d-flex w-100 py-2 flex-column">
