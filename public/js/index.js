@@ -43,7 +43,12 @@ window.onload = () => {
 
 $(window).scroll(() => {
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-    scrollFunction();
+    try {
+        scrollFunction();
+    }
+    catch {
+        
+    }
 });
 
 
